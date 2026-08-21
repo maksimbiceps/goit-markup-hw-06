@@ -1,0 +1,131 @@
+.footer-logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33333;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.footer-discription {
+  color: #f4f4fd;
+  width: 264px;
+}
+
+.footer {
+  padding: 100px 0px;
+}
+
+.footer-left {
+  margin-right: 120px;
+}
+.footer .container .social-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0px;
+}
+
+.social-wrapper .social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.social-list {
+  display: flex;
+  gap: 16px;
+}
+.social-item {
+}
+
+.social-item:hover .social-link {
+  background-color: #31d0aa;
+}
+.social-item:focus .social-link {
+  background-color: #31d0aa;
+}
+.social-link {
+}
+.footer .social-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer .container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.social-wrapper.bottom {
+  gap: 16px;
+}
+
+.subscribe {
+  margin-left: auto;
+}
+.subscribe-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+.email {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: inherit;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color;
+}
+.email:focus {
+  border: 1px solid #31d0aa;
+}
+
+.email::placeholder {
+  color: #ffffff;
+}
+
+.subscribe-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  max-width: 165px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #31d0aa;
+}
