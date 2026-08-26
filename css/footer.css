@@ -16,20 +16,68 @@
 }
 
 .footer {
-  padding: 100px 0px;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 96px 108px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0px;
+  }
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-top {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .footer-top {
+    gap: 120px;
+    margin-right: auto;
+  }
 }
 
 .footer-left {
-  margin-right: 120px;
-}
-.footer .container .social-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-left: 0px;
+  align-items: center;
+  /* margin-right: 120px; */
+}
+@media only screen and (min-width: 768px) {
+  .footer-left {
+    align-items: flex-start;
+  }
 }
 
-.social-wrapper .social-text {
+.footer-social-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .footer-social-wrapper {
+    align-items: flex-start;
+  }
+}
+
+/* .social-wrapper.bottom {
+  gap: 16px;
+} */
+
+.social-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -57,15 +105,36 @@
 
 .footer .container {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 72px;
+  /* align-items: flex-start; */
+  padding: 0 16px;
+}
+@media only screen and (min-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+    gap: 72px;
+  }
 }
 
-.social-wrapper.bottom {
-  gap: 16px;
+@media only screen and (min-width: 1158px) {
+  .footer .container {
+    flex-direction: row;
+    gap: 0;
+  }
 }
-
 .subscribe {
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  /* margin-left: auto; */
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe {
+    align-items: flex-start;
+  }
 }
 .subscribe-text {
   font-weight: 500;
@@ -73,12 +142,21 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .subscribe-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 .email {
   font-weight: 400;

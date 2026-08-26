@@ -33,14 +33,22 @@
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
 
-  max-width: 408px;
-  width: 100%;
+  max-width: 288px;
+  width: 90%;
   min-height: 582px;
-  padding: 72px 24px 24px;
+  padding: 72px 16px 24px 16px;
+  /* padding: 72px 24px 24px; */
   border-radius: 4px;
   background-color: #fcfcfc;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition-property: transform, opacity;
+}
+@media only screen and (min-width: 768px) {
+  .modal {
+    max-width: 408px;
+    width: 100%;
+    padding: 72px 24px 24px 24px;
+  }
 }
 
 .backdrop.is-open .modal {
@@ -175,6 +183,9 @@
   background-color: #404bbf;
 }
 .modal-form-policy {
+  display: flex;
+
+  gap: 8px;
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
@@ -194,7 +205,6 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-right: 8px;
 
   width: 16px;
   height: 16px;

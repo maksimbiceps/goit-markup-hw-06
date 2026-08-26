@@ -1,13 +1,14 @@
 .hero {
   background-color: #2e2f42;
-  padding: 188px 0px;
+  padding: 72px 0px;
   background-image:
     linear-gradient(
       180deg,
       rgba(46, 47, 66, 0.7) 0%,
       rgba(46, 47, 66, 0.7) 100%
     ),
-    url(../images/hero-bg.jpg);
+    image-set("../images/hero-bg_mob.jpg" 1x, "../images/hero-bg_mob@2x.jpg" 2x);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15,29 +16,85 @@
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      image-set(
+        "../images/hero-bg_tablet.jpg" 1x,
+        "../images/hero-bg_tablet@2x.jpg" 2x
+      );
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      image-set(
+        "../images/hero-bg_desk.jpg" 1x,
+        "../images/hero-bg_desk@2x.jpg" 2x
+      );
+  }
+}
+
 .hero-title {
   color: white;
+  font-size: 36px;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
+  max-width: 216px;
   text-align: center;
-  max-width: 496px;
   margin: 0 auto;
+
+  font-size: 56px;
 }
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07143;
+    max-width: 496px;
+  }
+}
+
 .hero-title-btn {
   color: white;
   background-color: #4d5ae5;
   font-weight: 500;
   letter-spacing: 0.04em;
   display: block;
-  margin: 0 auto;
-  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 72px;
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title-btn {
+    margin-top: 36px;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero-title-btn {
+    margin-top: 48px;
+  }
 }
 .hero-title-btn:hover {
   background-color: #404bbf;

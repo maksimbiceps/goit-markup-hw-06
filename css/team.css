@@ -12,7 +12,17 @@
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
+
+  /* gap: 24px; */
+}
+
+@media only screen and (min-width: 768px) {
+  .team-list {
+    gap: 72px 24px;
+  }
 }
 .team-item {
   background-color: white;
@@ -21,6 +31,8 @@
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team-image {
 }
 
 .team-name {
@@ -36,7 +48,7 @@
   padding: 32px 16px;
 }
 
-.social-wrapper {
+.team-social-wrapper {
   display: flex;
   gap: 24px;
   align-items: center;
