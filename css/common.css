@@ -121,10 +121,8 @@ address {
   padding-bottom: 120px; */
 }
 
-@media only screen and (min-width: 320px) {
-  .section {
-    padding: 96px 0;
-  }
+.section {
+  padding: 96px 0;
 }
 
 @media only screen and (min-width: 1158px) {

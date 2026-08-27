@@ -1,13 +1,7 @@
 .features {
-  padding: 96px 0;
   background-color: #fff;
 }
 
-@media only screen and (min-width: 1258px) {
-  .features {
-    padding: 120px 0;
-  }
-}
 .features-title {
 }
 .features-list {
@@ -29,11 +23,16 @@
   }
 }
 .features-item {
-  width: 264px;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .features-item {
     width: 356px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .features-item {
+    width: 264px;
   }
 }
 
@@ -52,17 +51,29 @@
     text-align: left;
   }
 }
+@media only screen and (min-width: 1158px) {
+  .features-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
 
 .features-description {
   font-weight: 500;
   font-size: 16px;
-
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
+@media only screen and (min-width: 1158px) {
+  .features-description {
+    font-weight: 400;
+  }
+}
+
 .icon-container {
-  width: 264px;
+  width: 100%;
   background-color: #f4f4fd;
   height: 112px;
   margin-bottom: 8px;
